@@ -1,0 +1,40 @@
+<!-- 
+氏名: カインテュザァ
+提出日: 2024年3月28日
+******************************************************  -->
+<div class="container">
+    <form class="form-inline">
+      <div class="form-group row col-sm-3">
+          <label for="currentTime" class="col-sm-4 col-form-label">時刻</label>
+        <div class="col-sm-6" style="margin-left: 20px; width:48%;">
+          <input type="number" id="currentTime" class="form-control" [(ngModel)]="intCheckTime" name="currentTime" min="0" max="23">
+        </div> 
+      </div>
+      <div class="form-group row col-sm-7">
+        <div class="col-sm-5">
+          <div class="form-group row">
+            <label for="startTime" class="col-sm-5 col-form-label">開始時刻</label>
+              <div class="col-sm-6">
+                <input class="form-control" type="number" id="startTime" [(ngModel)]="intStartTime" name="startTime" min="0" max="23">
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-5">
+          <div class="form-group row">
+          <label for="startTime" class="col-sm-5 col-form-label">終了時刻</label>
+            <div class="col-sm-6">
+              <input class="form-control" type="number" id="endTime" [(ngModel)]="intEndTime" name="endTime" min="0" max="23">
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <button class="btn btn-primary" (click)="CheckTime()">チェック</button>
+      </div>
+      </div>
+    </form>
+    </div>
+    
+    
+     
+    
